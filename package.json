@@ -1,0 +1,33 @@
+{
+  "name": "webpack-help-animals",
+  "version": "1.0.0",
+  "description": "help-animals project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgene30/help-animals.git"
+  },
+  "keywords": [
+    "animals",
+    "help",
+    "big-herts",
+    "dogs",
+    "cats",
+    "our-animals"
+  ],
+  "author": "Evgene Akulich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evgene30/help-animals/issues"
+  },
+  "homepage": "https://github.com/evgene30/help-animals#readme",
+  "devDependencies": {
+    "html-loader": "^1.3.2",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
