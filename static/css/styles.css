@@ -353,8 +353,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-heavy.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-Heavy.woff") format("woff");
+    src: url("../static/fonts/gilroy-heavy.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-Heavy.woff") format("woff");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -362,8 +362,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-bold.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-Bold.woff") format("woff");
+    src: url("../static/fonts/gilroy-bold.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-Bold.woff") format("woff");
 
     font-weight: 700;
     font-style: normal;
@@ -372,8 +372,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-semibold.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-SemiBold.woff") format("woff");
+    src: url("../static/fonts/gilroy-semibold.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-SemiBold.woff") format("woff");
 
     font-display: swap;
     font-weight: 600;
@@ -383,8 +383,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-medium.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-Medium.woff") format("woff");
+    src: url("../static/fonts/gilroy-medium.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-Medium.woff") format("woff");
 
     font-weight: 500;
     font-style: normal;
@@ -393,8 +393,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-mediumitalic.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-MediumItalic.woff") format("woff");
+    src: url("../static/fonts/gilroy-mediumitalic.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-MediumItalic.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -402,8 +402,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-regular.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-Regular.woff") format("woff");
+    src: url("../static/fonts/gilroy-regular.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-Regular.woff") format("woff");
 
     font-weight: 400;
     font-style: normal;
@@ -412,8 +412,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/gilroy-regularitalic.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-RegularItalic.woff") format("woff");
+    src: url("../static/fonts/gilroy-regularitalic.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-RegularItalic.woff") format("woff");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -421,8 +421,8 @@ a:focus {
 
 @font-face {
     font-family: "Gilroy";
-    src: url("/static/fonts/Gilroy-Light.woff2") format("woff2"),
-        url("/static/fonts/Gilroy-Light.woff") format("woff");
+    src: url("../static/fonts/Gilroy-Light.woff2") format("woff2"),
+        url("../static/fonts/Gilroy-Light.woff") format("woff");
 
     font-weight: 300;
     font-style: normal;
@@ -926,14 +926,14 @@ a {
 /* START фоновые картинки */
 .page-header {
     background-color: #f6f6f6;
-    background-image: url(/static/img/png/dog_header.png);
+    background-image: url(../static/img/png/dog_header.png);
     background-repeat: no-repeat;
     background-position-x: 798px;
     background-size: 718px 713px;
 }
 .cat-header__image {
     position: absolute;
-    background-image: url(/static/img/png/cat_1.png);
+    background-image: url(../static/img/png/cat_1.png);
     background-repeat: no-repeat;
     width: 483px;
     height: 469px;
@@ -945,7 +945,7 @@ a {
 .page-header__background {
     padding-top: 39px;
     height: 834px;
-    background-image: url(/static/img/svg/freends__all.svg);
+    background-image: url(../static/img/svg/freends__all.svg);
     background-repeat: no-repeat;
     background-position-x: 260px;
     background-position-y: 374px;
@@ -1149,7 +1149,7 @@ a {
 }
 
 .custom-image-wrapper__secondary-image::after {
-    background-image: url(/static/img/png/cat_help.png);
+    background-image: url(../static/img/png/cat_help.png);
     background-position: center;
     background-size: cover;
 }
@@ -1420,7 +1420,7 @@ a {
     color: #f6b400;
 }
 .our-animals-block__link-all::after {
-    content: url(/static/img/svg/icon_all.svg);
+    content: url(../static/img/svg/icon_all.svg);
     padding-left: 15px;
 }
 
@@ -1836,7 +1836,7 @@ a {
 /* START секция "Спасибо за помощь" */
 .thanks-help {
     display: flex;
-    background-image: url(/static/img/png/backgroun_footer.png);
+    background-image: url(../static/img/png/backgroun_footer.png);
     background-position: center;
     background-size: cover;
 
@@ -1901,7 +1901,7 @@ a {
     left: 100%;
     width: 90px;
     height: 90px;
-    background: url(/static/img/svg/lapa.svg) no-repeat;
+    background: url(../static/img/svg/lapa.svg) no-repeat;
 }
 
 /* END секция "Спасибо за помощь" */
