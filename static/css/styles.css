@@ -2553,7 +2553,7 @@ a {
         left: 0;
         top: 0;
     }
-    
+
     .menu ul {
         list-style: none;
         text-align: center;
@@ -2735,14 +2735,14 @@ a {
     .page-footer__nav {
         height: auto;
         padding: 21px 0px 0px 0px;
+        max-width: 382px;
+        margin: 0 auto;
     }
     .footer-links--left {
         justify-content: flex-start;
         flex-direction: column;
         text-align: left;
         flex-wrap: wrap;
-        width: 229px;
-        min-width: 229px;
         padding-top: 2px;
     }
     .footer-links--right {
