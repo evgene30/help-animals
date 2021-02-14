@@ -926,29 +926,44 @@ a {
 /* START фоновые картинки */
 .page-header {
     background-color: #f6f6f6;
+    height: 834px;
+}
+.page-header__section {
+    padding-top: 40px;
+    max-width: 1144px;
+    height: 834px;
     background-image: url(/static/img/png/dog_header.png);
     background-repeat: no-repeat;
-    background-position-x: 798px;
-    background-size: 718px 713px;
+    background-position: top right;
+    position: relative;
+    background-size: auto;
 }
+
 .cat-header__image {
     position: absolute;
     background-image: url(/static/img/png/cat_1.png);
     background-repeat: no-repeat;
-    width: 483px;
-    height: 469px;
     z-index: 1;
-    left: 867px;
-    top: 470px;
+    /* left: 25.8vw; */
+    top: 33.6vh;
+    margin-left: 43.3%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 116%;
+    background-size: contain;
 }
 
-.page-header__background {
+.section-background-images__text {
     padding-top: 39px;
-    height: 834px;
+    height: 65%;
+    width: 67.5%;
     background-image: url(/static/img/svg/freends__all.svg);
     background-repeat: no-repeat;
-    background-position-x: 260px;
-    background-position-y: 374px;
+    left: -111px;
+    top: -189px;
+    z-index: 1;
+    position: relative;
+    background-size: contain;
 }
 /* END фоновые картинки */
 
@@ -966,7 +981,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 634px;
+    width: 824px;
     font-size: 16px;
     line-height: 19px;
 }
@@ -1031,6 +1046,8 @@ a {
 
 .page-header__title {
     margin-top: 70px;
+    position: relative;
+    z-index: 2;
 }
 .page-header-title__name {
     font-family: Gilroy, serif;
@@ -2035,9 +2052,18 @@ a {
     }
 
     /* START секция header */
+    .page-header__section {
+        padding-top: 0px;
+        height: 566px;
+    }
+    .page-header {
+        height: auto;
+    }
     .page-header-title__name {
         font-weight: bold;
         font-size: 30px;
+        line-height: 0px;
+        margin-top: 45px;
     }
     .page-header__background {
         height: 566px;
@@ -2059,10 +2085,6 @@ a {
     }
     .page-header__title {
         margin-top: 0px;
-    }
-    .page-header-title__name {
-        line-height: 0px;
-        margin-top: 38px;
     }
     .page-header-title__text-description {
         width: 211px;
@@ -2156,7 +2178,7 @@ a {
         bottom: -2%;
         right: -12%;
     }
-    .cat-header__image {
+    .cat-header__image, .section-background-images__text {
         display: none;
     }
 
@@ -2398,7 +2420,7 @@ a {
     }
     .page-header__socials-link {
         width: 86px;
-        padding-top: 10px;
+        padding-top: 15px;
         height: 32px;
     }
     .page-header__socials-link img {
@@ -2406,7 +2428,7 @@ a {
     }
 
     .page-header__background {
-        padding-top: 2%;
+        padding-top: 0%;
     }
     .page-header__wrapper {
         justify-content: flex-end;
