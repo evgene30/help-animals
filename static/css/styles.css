@@ -2178,8 +2178,26 @@ a {
         bottom: -2%;
         right: -12%;
     }
-    .cat-header__image, .section-background-images__text {
-        display: none;
+
+    /* ФОН секции */
+
+    .page-header__section {
+        background-image: url(../img/png/dog360.png);
+        max-width: 500px;
+    }
+
+    .cat-header__image {
+        top: 19.5vh;
+        margin-left: 38%;
+        width: 55%;
+        height: 157px;
+    }
+
+    .section-background-images__text {
+        left: -30px;
+        height: 65%;
+        width: 75%;
+        top: -266px;
     }
 
     /* END секция "Большие добрые сердца... */
@@ -2565,11 +2583,13 @@ a {
         background-color: white;
         position: fixed;
         width: 100vw;
-        height: 50vh;
+        height: 40vh;
+        background-position-y: -20;
         z-index: 10;
         left: -100vw;
         transition: all 0.5s;
         flex-direction: column;
+        margin-top: 80px;
     }
     .menu_active {
         left: 0;
