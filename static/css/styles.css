@@ -2048,13 +2048,10 @@ a {
     }
     .page-header {
         height: 642px;
-  
-        
     }
     .page-header__section {
         background-image: url(../img/png/dog1024.png);
         max-height: 642px;
-      
     }
     .cat-header__image {
         top: 24vh;
@@ -2082,7 +2079,7 @@ a {
 
     .our-animals-block {
         padding: 0 3%;
-    } 
+    }
 }
 @media screen and (max-width: 639px) {
     html {
@@ -2361,12 +2358,15 @@ a {
     .our-animals-block__text {
         display: flex;
         flex-wrap: wrap;
-        max-width: 382px;
+        width: 300px;
+        padding-top: 14px;
+        padding-bottom: 20px;
     }
     .our-animals-block__text p {
         font-size: 14px;
         line-height: 140%;
         padding-top: 10.1%;
+
         margin: 0 auto;
     }
     .our-animals-block__socials-link {
@@ -2631,23 +2631,33 @@ a {
         background-color: white;
         position: fixed;
         width: 100vw;
-        height: 40vh;
-        background-position-y: -20;
+        height: 54vh;
         z-index: 10;
         left: -100vw;
         transition: all 0.5s;
         flex-direction: column;
-        margin-top: 80px;
     }
     .menu_active {
         left: 0;
         top: 0;
+        padding-top: 55px;
     }
 
     .menu ul {
         list-style: none;
         text-align: center;
         flex-direction: column;
+        width: 100%;
+    }
+    .menu li {
+        width: 62%;
+        border-bottom: 1px solid #ffc41e;
+        margin: 0 auto;
+        height: 68px;
+        padding-top: 10px;
+    }
+    .menu > .nav-links__right li:last-child {
+        border-bottom: none;
     }
     .menu ul a {
         color: #242424;
@@ -2660,12 +2670,13 @@ a {
         display: block;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
     }
 
     .burger-menu__overlay {
         display: none;
         position: fixed;
-        top: 50%;
+        top: 54%;
         left: 0;
         width: 100vw;
         height: 100vh;
@@ -2674,6 +2685,16 @@ a {
     .menu_active .burger-menu__overlay {
         display: block;
         background-color: rgba(0, 0, 0, 0.5);
+    }
+    .menu::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: #ffc41e;
+        display: block;
+        z-index: 6;
+        width: 100%;
+        height: 64px;
     }
 
     /* END бургер-меню */
