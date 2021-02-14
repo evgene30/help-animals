@@ -2035,7 +2035,55 @@ a {
 /* END Кнопка ВВерх */
 
 /* ==============MOBILE VERSION ======*/
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 300;
+    }
+    section {
+        padding: 0 10%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .page-header {
+        height: 642px;
+  
+        
+    }
+    .page-header__section {
+        background-image: url(../img/png/dog1024.png);
+        max-height: 642px;
+      
+    }
+    .cat-header__image {
+        top: 24vh;
+        margin-left: 48%;
+        width: 50%;
+        height: 326px;
+    }
 
+    .section-background-images__text {
+        left: -30px;
+        height: 65%;
+        width: 75%;
+        top: -266px;
+    }
+    /* .big-hearts-block__content, .help-block__links, .help-block__articles, .help-block-article__item, .finance-block__items, .feed-block__info, .autohelp-block__article, .volunteering-block__article,.about-block__content{
+        padding-left: 0;
+        padding-right: 0;
+        min-height: auto;
+        margin: 0 auto;
+       
+    }
+    .help-block__links {
+        justify-content: space-evenly;
+    } */
+
+    .our-animals-block {
+        padding: 0 3%;
+    } 
+}
 @media screen and (max-width: 639px) {
     html {
         font-size: 8px;
@@ -2187,9 +2235,9 @@ a {
     }
 
     .cat-header__image {
-        top: 19.5vh;
+        top: 35.2%;
         margin-left: 38%;
-        width: 55%;
+        width: 50%;
         height: 157px;
     }
 
