@@ -2047,17 +2047,39 @@ a {
         margin: 0 auto;
     }
     .page-header {
-        height: 642px;
+        height: 542px;
+  
+        
+    }
+    .page-header__nav  {
+        width: 520px;
+
     }
     .page-header__section {
         background-image: url(../img/png/dog1024.png);
         max-height: 642px;
+      
     }
     .cat-header__image {
         top: 24vh;
         margin-left: 48%;
         width: 50%;
         height: 326px;
+    }
+    .page-header__socials-link {
+        height: auto;
+        width: 82px;
+    }
+    .page-header-title__text-opportunity {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .page-header-title__name {
+        font-size: 42px;
+        line-height: 51px;
+    }
+    .page-header__socials-link img {
+        width: 32px;
     }
 
     .section-background-images__text {
@@ -2066,7 +2088,7 @@ a {
         width: 75%;
         top: -266px;
     }
-    /* .big-hearts-block__content, .help-block__links, .help-block__articles, .help-block-article__item, .finance-block__items, .feed-block__info, .autohelp-block__article, .volunteering-block__article,.about-block__content{
+    .big-hearts-block__content, .help-block__links, .help-block__articles, .help-block-article__item, .finance-block__items, .feed-block__info, .autohelp-block__article, .volunteering-block__article,.about-block__content{
         padding-left: 0;
         padding-right: 0;
         min-height: auto;
@@ -2075,11 +2097,13 @@ a {
     }
     .help-block__links {
         justify-content: space-evenly;
-    } */
+    }
 
     .our-animals-block {
         padding: 0 3%;
-    }
+    } 
+   
+    
 }
 @media screen and (max-width: 639px) {
     html {
@@ -2358,7 +2382,7 @@ a {
     .our-animals-block__text {
         display: flex;
         flex-wrap: wrap;
-        width: 300px;
+        width: 300px; 
         padding-top: 14px;
         padding-bottom: 20px;
     }
@@ -2366,7 +2390,7 @@ a {
         font-size: 14px;
         line-height: 140%;
         padding-top: 10.1%;
-
+       
         margin: 0 auto;
     }
     .our-animals-block__socials-link {
@@ -2636,11 +2660,14 @@ a {
         left: -100vw;
         transition: all 0.5s;
         flex-direction: column;
+        
+ 
     }
     .menu_active {
         left: 0;
         top: 0;
-        padding-top: 55px;
+        padding-top: 55px; 
+
     }
 
     .menu ul {
@@ -2648,15 +2675,16 @@ a {
         text-align: center;
         flex-direction: column;
         width: 100%;
+           
     }
     .menu li {
         width: 62%;
-        border-bottom: 1px solid #ffc41e;
+        border-bottom: 1px solid #FFC41E;
         margin: 0 auto;
         height: 68px;
         padding-top: 10px;
     }
-    .menu > .nav-links__right li:last-child {
+    .menu >.nav-links__right li:last-child {
         border-bottom: none;
     }
     .menu ul a {
@@ -2664,6 +2692,7 @@ a {
         line-height: 3;
         transition: all 0.3s;
         text-decoration: none;
+
     }
     .menu ul a:hover {
         color: #242424;
@@ -2686,16 +2715,17 @@ a {
         display: block;
         background-color: rgba(0, 0, 0, 0.5);
     }
-    .menu::before {
-        content: "";
-        position: absolute;
+    .menu::before{
+        content: '';
+        position:absolute;
         top: 0;
-        background-color: #ffc41e;
-        display: block;
+        background-color:#FFC41E;
+        display: block; 
         z-index: 6;
         width: 100%;
         height: 64px;
     }
+   
 
     /* END бургер-меню */
 
