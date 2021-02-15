@@ -184,7 +184,7 @@ html {
 }
 
 a:focus {
-    outline: thin dotted;
+    outline: none;
 }
 
 a:active,
@@ -341,8 +341,8 @@ html {
 /* Убирает все рамки вокруг ссылок */
 /* Настройка ФОКУСА */
 
-a:focus {
-    outline: solid #6b6b6b 2px;
+a:focus-visible {
+    outline: 3px solid #6B6B6B;
 }
 
 /*=========== END reset style============== */
@@ -612,10 +612,10 @@ button {
     border-radius: 58px;
     font-weight: 500;
 }
-button:focus {
+button:focus-visible{
+    border: solid #6b6b6b 3px;
     outline: none;
-    border: solid #6b6b6b 2px;
-}
+}    
 .send {
     background: #fbc832;
     border-radius: 58px;
@@ -640,14 +640,14 @@ button:focus {
     background-blend-mode: multiply;
     color: black;
     box-shadow: none;
-}
-.send:focus {
+    border: none;
     outline: none;
-    border: solid #6b6b6b 2px;
 }
-button::-moz-focus-inner {
-    border: 0;
+.send:focus-visible {
+    border: solid #6b6b6b 3px;
+    outline: none;
 }
+
 .send:disabled {
     background: #ffe28e;
     color: 6b6b6b;
@@ -1038,10 +1038,13 @@ a {
 .socials-link__inst:active {
     background: #ffbc00;
     box-shadow: none;
+    outline: none;
 }
-.socials-link__vk:focus,
-.socials-link__inst:focus {
-    outline: dotted black 1px;
+.socials-link__vk:focus-visible,
+.socials-link__inst:focus-visible{
+    border: 3px solid #6B6B6B;
+    border-radius: 50%;
+    outline: none;
 }
 
 .page-header__title {
@@ -1266,10 +1269,13 @@ a {
     background: #f8eccb;
     border: 2px solid #ffc41e;
     box-shadow: none;
-}
-.help-block-links__image img:focus {
     outline: none;
-    border: 2px solid #ffc41e;
+
+}
+.help-block-links__image img:focus-visible {
+    border: 3px solid #6B6B6B;
+    outline: none;
+    border-radius: 50%;
 }
 /* вторая секция блока */
 
@@ -1481,12 +1487,14 @@ a {
 .socials-link__inst-gold:active {
     background: #f8eccb;
     box-shadow: none;
+    outline: none;
 }
 
-.socials-link__vk-gold:focus,
-.socials-link__inst-gold:focus {
+.socials-link__vk-gold:focus-visible,
+.socials-link__inst-gold:focus-visible {
+    border: 3px solid #6B6B6B;
+    border-radius: 50%;
     outline: none;
-    border: solid #242424 2px;
 }
 
 /* END секция "Наши подопечные" */
@@ -2024,12 +2032,17 @@ a {
     fill: #000000;
 }
 
-#topButtom rect:hover,
-#topButtom rect:focus {
+#topButtom rect:hover {
     fill: #ffdf86;
+}
+#topButtom rect:focus-visible {
+    outline: none;
+    border: solid #6b6b6b 3px;
 }
 #topButtom rect:active {
     fill: #ffbb0c;
+    outline: none;
+    border: none;
 }
 
 /* END Кнопка ВВерх */
