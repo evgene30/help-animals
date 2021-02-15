@@ -14,6 +14,7 @@
         content="Бездомные животные, помощь, поддержка, передержка, приют, пункт временного содержания животных в Гродно, волонтерство" />
     <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
     <link rel="shortcut icon" href="/static/img/svg/logo_icon.svg" type="image/svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -21,18 +22,18 @@
     <!-- START секция header -->
     <header class="page-header header">
         <div class="page-header__background">
-            <section class="page-header__section">
+            <section class="page-header__section" data-aos="fade-left" data-aos-duration="2000">
                 <a href="#menu" class="menu-link">
                     <span></span>
                 </a>
 
-                <div class="page-header__wrapper wrapper">
+                <div class="page-header__wrapper wrapper" data-aos="fade-right" data-aos-duration="2000">
 
                     <nav class="page-header__nav nav menu">
 
                         <ul class="page-header-nav__link nav-links__left">
                             <li class="page-header-nav-link__help"><a href="#help-block">Как помочь</a></li>
-                            <li class="page-header-nav-link__animals">
+                            <li class="page-header-nav-link__animals ">
                                 <a href="#ouranimals-title">Подопечные животные</a>
                             </li>
                         </ul>
@@ -59,7 +60,7 @@
 
                 </div>
 
-                <div class="page-header__title">
+                <div class="page-header__title" data-aos="fade-right" data-aos-duration="2000">
                     <h1 class="page-header-title__name">СПАСИ ЖИЗНЬ</h1>
                     <h2 class="page-header-title__text-description">
                         Благотворительное общественное объединение защиты животных
@@ -73,13 +74,13 @@
                         У животных, находящихся в пункте отлова и временного содержания
                         бродячих животных, есть всего несколько дней до усыпления...
                     </p>
-                    <a class="button send button_header" href="#help-block" title="Помогать это здорово!">Хочу
+                    <a class="button send button_header" href="#help-block" title="Помогать это здорово!" data-aos="fade-right" data-aos-duration="3000">Хочу
                         помочь</a>
-                    <div class="cat-header__image"></div>
+                    <div class="cat-header__image" data-aos="fade-up" data-aos-duration="2000"></div>
 
                 </div>
 
-                <div class="section-background-images__text"></div>
+                <div class="section-background-images__text" data-aos="fade-up" data-aos-duration="2000"></div>
             </section>
 
         </div>
@@ -125,16 +126,16 @@
         <!-- START секция "Как помочь?" -->
         <div class="help-block__background background-block" id="help-block">
             <section class="help-block">
-                <h2 class="help-block__title block-title">Как помочь?</h2>
+                <h2 class="help-block__title block-title" >Как помочь?</h2>
 
-                <ul class="help-block__links">
+                <ul class="help-block__links" data-aos="fade-up" data-aos-duration="1000">
 
                     <li class="help-block-links__item">
                         <a href="#help-block-home">
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/dog.svg" alt="CSS image add" />
                             </div>
-                            <h4>Дать хвостику дом или взять на передержку</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Дать хвостику дом или взять на передержку</h4>
                         </a>
                     </li>
 
@@ -143,7 +144,7 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/hend.svg" alt="CSS image add" />
                             </div>
-                            <h4>Перечислить деньги в фонд помощи</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Перечислить деньги в фонд помощи</h4>
                         </a>
                     </li>
 
@@ -152,7 +153,7 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/dog_cross.svg" alt="CSS image add" />
                             </div>
-                            <h4>Привезти корм, лекарства или другие вещи</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Привезти корм, лекарства или другие вещи</h4>
                         </a>
                     </li>
 
@@ -161,7 +162,7 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/dog-auto.svg" alt="CSS image add" />
                             </div>
-                            <h4>Доставить животным еду или отвезти в больницу</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Доставить животным еду или отвезти в больницу</h4>
                         </a>
                     </li>
 
@@ -170,7 +171,7 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/hend-people.svg" alt="CSS image add" />
                             </div>
-                            <h4>Выгуливать, кормить, мыть или лечить хвостиков</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Выгуливать, кормить, мыть или лечить хвостиков</h4>
                         </a>
                     </li>
 
@@ -220,7 +221,7 @@
 
                 <div class="our-animals-block__cards">
 
-                    <div class="our-animals-block__card">
+                    <div class="our-animals-block__card" data-aos="fade-left" data-aos-duration="1000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/boy_dog.jpg" alt="пес Моник" />
                         </div>
@@ -237,7 +238,7 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card">
+                    <div class="our-animals-block__card" data-aos="fade-left" data-aos-duration="2000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Lunatik_cat.jpg"
                                 alt="кот Лунатик" />
@@ -254,7 +255,7 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card">
+                    <div class="our-animals-block__card" data-aos="fade-left" data-aos-duration="3000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/gerda_dog.jpg" alt="пес Герда" />
                         </div>
@@ -270,7 +271,8 @@
                         <button type="button" value="Забрать на передержку"
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
-                    <div class="our-animals-block__card card--none">
+
+                    <div class="our-animals-block__card card--none " data-aos="fade-left" data-aos-duration="1000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Saki_cat.jpg" alt="кот Саки" />
                         </div>
@@ -287,7 +289,7 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card card--none">
+                    <div class="our-animals-block__card card--none" data-aos="fade-left" data-aos-duration="2000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Monika_dog.jpg"
                                 alt="пес Моника" />
@@ -305,7 +307,7 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card card--none">
+                    <div class="our-animals-block__card card--none" data-aos="fade-left" data-aos-duration="3000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Adreatino_dog.jpg"
                                 alt="пес Андреантино" />
@@ -545,11 +547,11 @@
 
                 <div class="news-block-content__article article-one">
 
-                    <div class="news-block-content__image">
+                    <div class="news-block-content__image" data-aos="fade-right" data-aos-duration="3000">
                         <img src="static/img/png/black_dog.png" alt="img news" class="news_img" />
                     </div>
 
-                    <div class="news-block-content__text text-one">
+                    <div class="news-block-content__text text-one" data-aos="fade-right" data-aos-duration="3000">
                         <p>
                             Срочно необходимо забрать собаку (мальчик) на передержку или
                             насовсем. Послезавтра его ждет усыпление. С кормом и доставкой
@@ -563,11 +565,11 @@
                 </div>
                 <div class="news-block-content__article article-two">
 
-                    <div class="news-block-content__image">
+                    <div class="news-block-content__image" data-aos="fade-right" data-aos-duration="3000">
                         <img src="static/img/png/black-dogs.png" alt="img news" class="news_img img_two" />
                     </div>
 
-                    <div class="news-block-content__text text-two">
+                    <div class="news-block-content__text text-two" data-aos="fade-right" data-aos-duration="3000">
                         <p>Найдены бедомные щенки по улице Горького д.56.</p>
                         <p>
                             Сегодня будут перевезены в вольеры САХа. Если у вас есть
@@ -724,6 +726,7 @@
                 d="M110.192 261.455C106.635 259.434 105.818 255.529 108.366 252.733L204.376 147.397C205.844 145.786 208.2 144.826 210.72 144.81C213.241 144.795 215.625 145.726 217.142 147.318L319.178 254.423C321.811 257.187 321.113 261.101 317.619 263.166C314.125 265.23 309.158 264.663 306.525 261.899L210.977 161.605L121.245 260.053C118.697 262.849 113.748 263.476 110.192 261.455Z" />
         </svg>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/static/js/script.js"></script>
     <!-- END Кнопка ВВерх -->

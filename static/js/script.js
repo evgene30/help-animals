@@ -28,3 +28,10 @@ $(document).ready(function(){
     });
 });
 
+  AOS.init({
+    disable: function () {
+      var maxWidth = 640;
+      return window.innerWidth < maxWidth;
+    }
+  });
+

@@ -1310,6 +1310,7 @@ a {
 }
 /* END section "Как помочь"? */
 
+
 /* START секция "Наши подопечные" */
 .our-animals-block__title {
     padding-bottom: 2.6%;
@@ -1398,6 +1399,7 @@ a {
 .yellow-button:hover {
     background: #ffdf86;
     box-shadow: 0px 2px 4px #cccccc;
+    
 }
 .yellow-button:active {
     background: #ffbb0c;
