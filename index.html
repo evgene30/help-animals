@@ -74,7 +74,8 @@
                         У животных, находящихся в пункте отлова и временного содержания
                         бродячих животных, есть всего несколько дней до усыпления...
                     </p>
-                    <a class="button send button_header" href="#help-block" title="Помогать это здорово!" data-aos="fade-right" data-aos-duration="3000">Хочу
+                    <a class="button send button_header" href="#help-block" title="Помогать это здорово!"
+                        data-aos="fade-right" data-aos-duration="3000">Хочу
                         помочь</a>
                     <div class="cat-header__image" data-aos="fade-up" data-aos-duration="2000"></div>
 
@@ -126,7 +127,7 @@
         <!-- START секция "Как помочь?" -->
         <div class="help-block__background background-block" id="help-block">
             <section class="help-block">
-                <h2 class="help-block__title block-title" >Как помочь?</h2>
+                <h2 class="help-block__title block-title">Как помочь?</h2>
 
                 <ul class="help-block__links" data-aos="fade-up" data-aos-duration="1000">
 
@@ -135,7 +136,8 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/dog.svg" alt="CSS image add" />
                             </div>
-                            <h4 data-aos="fade-up" data-aos-duration="2000">Дать хвостику дом или взять на передержку</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Дать хвостику дом или взять на передержку
+                            </h4>
                         </a>
                     </li>
 
@@ -153,7 +155,8 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/dog_cross.svg" alt="CSS image add" />
                             </div>
-                            <h4 data-aos="fade-up" data-aos-duration="2000">Привезти корм, лекарства или другие вещи</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Привезти корм, лекарства или другие вещи
+                            </h4>
                         </a>
                     </li>
 
@@ -162,7 +165,8 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/dog-auto.svg" alt="CSS image add" />
                             </div>
-                            <h4 data-aos="fade-up" data-aos-duration="2000">Доставить животным еду или отвезти в больницу</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Доставить животным еду или отвезти в
+                                больницу</h4>
                         </a>
                     </li>
 
@@ -171,7 +175,8 @@
                             <div class="help-block-links__image">
                                 <img src="/static/img/svg/list-elements/hend-people.svg" alt="CSS image add" />
                             </div>
-                            <h4 data-aos="fade-up" data-aos-duration="2000">Выгуливать, кормить, мыть или лечить хвостиков</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Выгуливать, кормить, мыть или лечить
+                                хвостиков</h4>
                         </a>
                     </li>
 
@@ -498,7 +503,8 @@
                     </p>
                     <button type="button" value="Оставить заявку" id="autohelp-block__button"
                         class="animals-block__button yellow-button finance-block__button volunteering__button">Оставить
-                        заявку</button>
+                        заявку
+                    </button>
                 </div>
             </section>
 
@@ -530,7 +536,7 @@
                             сидят в клетках и грустят.</p>
 
                     </div>
-                    <button type="button" value="Оставить заявку" id="volunteering-block__button"
+                    <button type="button" value="Оставить заявку" id="myBtn"
                         class="animals-block__button yellow-button finance-block__button volunteering__button">Оставить
                         заявку</button>
                 </div>
@@ -713,6 +719,97 @@
             </div>
 
         </section>
+        <!-- модальные окна -->
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- Четвертая форма "Волонтерство" -->
+                <div class="take_home volonter">
+                    <div class="take_home__header">
+                        <h2>Волонтерство</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="close"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
+                        </button>
+                    </div>
+                    <hr size="1" color="#ffc41e">
+                    <div class="auto-block">
+                        <h3>Заявка</h3>
+                    </div>
+                    <div class="info">
+                        <p class="info_p auto_p">Отправьте нам заявку о том, что готовы помочь. Когда нам будет
+                            необходима помощь,
+                            мы позвоним вам.</p>
+                    </div>
+                    <form action="#" method="POST" name="user_form" target="_self" autocomplete="off" id="user_data4">
+                        <fieldset>
+                            <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2"
+                                maxlength="56" pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
+                            <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
+                                pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
+                            <label for="tel">Обязательное поле для заполнения</label>
+                            <div class="radio-volonter">
+                                <div class="radio-volonter__radio">
+                                    <input type="radio" id="radio_1" name="help" class="radio_button" value="Хочу помогать на постоянной основе (расписание можно подобрать так, как
+                        будет удобно для всех)">
+                                    <label for="radio_1">Хочу помогать на постоянной основе (расписание можно подобрать
+                                        так, как
+                                        будет удобно для всех)
+                                    </label>
+                                </div>
+                                <div class="radio-volonter__radio">
+                                    <input type="radio" id="radio_2" name="help" class="radio_button"
+                                        value="Готов помогать иногда. Хочу выбрать удобное для меня время">
+                                    <label for="radio_2">Готов помогать иногда. Хочу выбрать удобное для меня
+                                        время</label>
+                                </div>
+                            </div>
+                            <textarea placeholder="Замечания" maxlength="500"></textarea>
+                        </fieldset>
+                        <div class="button-type">
+                            <button style="margin-top: 31px;" class="send" type="submit" form="user_data4">Отправить
+                                заявку</button>
+                            <button style="margin-top: 31px;" class="reset" type="reset"
+                                form="user_data4">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Конец четвертой формы "Волонтерство" -->
+            </div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+
+
+
+
 
 
     </footer>
