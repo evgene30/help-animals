@@ -600,7 +600,6 @@ label {
 button {
     font-family: Gilroy, sans-serif;
     font-size: 20px;
-    border-radius: 6px;
     max-width: 234px;
     height: 42px;
     border: white;
@@ -614,6 +613,13 @@ button {
 button:focus-visible{
     border: solid #6b6b6b 3px;
     outline: none;
+   
+    
+} 
+button:focus-visible{
+    border: solid #6b6b6b 3px;
+    outline: none;
+    
 }    
 .send {
     background: #fbc832;
@@ -642,9 +648,11 @@ button:focus-visible{
     border: none;
     outline: none;
 }
-.send:focus-visible {
+
+.send:focus-visible{
     border: solid #6b6b6b 3px;
     outline: none;
+    font-size: 19px;
 }
 
 .send:disabled {
@@ -993,7 +1001,7 @@ a {
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    max-width: 525px;
+    max-width: 5px;
    
   }
   
