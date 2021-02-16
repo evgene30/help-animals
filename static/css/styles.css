@@ -441,7 +441,6 @@ body {
 }
 
 .take_home {
-    margin: 13px 10px 10px 10px;
     background-color: white;
     border-radius: 5px;
     min-height: 735px;
@@ -974,8 +973,9 @@ a {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    /* Location of the box */
     left: 0;
+    align-items: center;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -987,14 +987,14 @@ a {
   /* Modal Content */
   .modal-content {
     position: relative;
-    
     margin: auto;
     padding: 0;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    width: 60vh;
+    max-width: 525px;
+   
   }
   
   /* Add Animation */
@@ -1008,7 +1008,6 @@ a {
     to {top:0; opacity:1}
   }
   
-  /* The Close Button */
   .close {
     color: white;
     float: right;
@@ -1023,20 +1022,7 @@ a {
     cursor: pointer;
   }
   
-  .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
   
-  .modal-body {padding: 2px 16px;}
-  
-  .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
-
 
 
 
