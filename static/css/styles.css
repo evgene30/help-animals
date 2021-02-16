@@ -856,6 +856,10 @@ label input[type="checkbox"]:checked + span {
 /* END MODAL FORMS style */
 
 /* ======= START all page ========*/
+.page-name__background {
+    padding-top: 5%;
+    background-color: #f6f6f6;
+}
 section {
     /* height: auto;
     padding: 0 15px; */
@@ -1329,9 +1333,8 @@ a {
 }
 
 .help-block-links__image:hover {
-    background-color: #ffffff;
     box-shadow: 0px 2px 4px #cccccc;
-    transition: 0.8s;
+    background: white;
 }
 
 .help-block-links__image:active {
@@ -1381,6 +1384,46 @@ a {
 /* START секция "Наши подопечные" */
 .our-animals-block__title {
     padding-bottom: 2.6%;
+}
+.our-animals__info {
+    display: flex;
+    max-width: 1140px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 43px 0px 40px 0px;
+    margin: 0 auto;
+}
+.our-animals__info h2 {
+    padding: 0;
+}
+.linlk-down {
+    display: flex;
+    align-items: center;
+}
+.our-animals__select {
+    font-family: Gilroy;
+    width: 168px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url(/static/img/svg/down_b.svg);
+    background-repeat: no-repeat;
+    background-position: right 6px top 50%;
+    appearance: none;
+    padding-left: 16px;
+}
+
+
+.our-animals__select::before {
+    content: "ffgfg";
+    color: black;
+    display: block;
+    width: 70px;
+    height: 40px;
+    display: block;
 }
 .our-animals-block__cards {
     display: grid;
@@ -1563,6 +1606,19 @@ a {
     border: 3px solid #6b6b6b;
     border-radius: 50%;
     outline: none;
+}
+
+.linlk-down {
+    font-size: 20px;
+}
+.linlk-down a {
+    color: #6b6b6b;
+}
+.linlk-down::before {
+    content: url(/static/img/svg/mark.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 /* END секция "Наши подопечные" */
