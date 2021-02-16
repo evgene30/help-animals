@@ -1400,7 +1400,21 @@ a {
 .linlk-down {
     display: flex;
     align-items: center;
+    font-size: 20px;
 }
+
+.linlk-down a:hover {
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: #000000;
+    transition: 0.8s;
+}
+
+.linlk-down a:active {
+    color: #242424;
+    text-decoration-line: unset;
+}
+
 .our-animals__select {
     font-family: Gilroy;
     width: 168px;
@@ -1413,17 +1427,28 @@ a {
     background-repeat: no-repeat;
     background-position: right 6px top 50%;
     appearance: none;
-    padding-left: 16px;
+    padding-left: 13px;
 }
-
-
-.our-animals__select::before {
-    content: "ffgfg";
-    color: black;
+.our-animals__select:focus-visible {
+    border: 2px solid #ffc41e;
+}
+.our-animals__select:hover {
+    border: 1px solid #ffc41e;
+}
+.our-animals__select:active {
+    border: 2px solid #ffc41e;
+}
+.div-sel {
+    display: flex;
+    align-items: center;
+}
+.div-sel::before {
+    content: "Показать";
+    color: #6b6b6b;
     display: block;
-    width: 70px;
-    height: 40px;
+    font-weight: 300;
     display: block;
+    padding-right: 8px;
 }
 .our-animals-block__cards {
     display: grid;
@@ -2243,6 +2268,9 @@ a {
 
     .our-animals-block {
         padding: 0 3%;
+    }
+    .our-animals__info {
+        max-width: 768px;
     }
 }
 @media screen and (max-width: 639px) {
