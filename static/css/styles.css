@@ -544,6 +544,19 @@ fieldset > input {
     color: #6b6b6b;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .right > form > textarea {
     margin-bottom: -6px;
 }
@@ -780,6 +793,52 @@ label input[type="checkbox"]:checked + span {
     width: 16px;
     height: 16px;
 }
+
+/* стилизация чекбокса */
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox + span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.checkbox + span::before {
+    content: '';
+    display: inline-flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #f9b800;
+    border-radius: 2px;
+    margin-right: 13px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:checked + span::before {
+    border-color: #ffc41e;
+    background-color: #ffc41e;
+    background-image: url("/static/img/svg/check.svg");
+
+}
+.take_home__check {
+    margin-bottom: 0;
+}
+.take_home__check span{
+    display: flex;
+    flex-direction: row;
+}
+.checkbox-area > label > span {
+    margin-left: 0;
+    line-height: 0;
+}
 /* Конец третьей формы "Автопомощь" */
 
 /* Четвертая форма "Волонтерство" */
@@ -851,6 +910,40 @@ label input[type="checkbox"]:checked + span {
     font-style: normal;
     font-weight: 500;
 }
+/* стилизация чекбокса */
+
+.radio_button {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.radio_button + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.radio_button + label::before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #f9b800;
+    border-radius: 50%;
+    margin-right: 11px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.radio_button:checked + label::before {
+    border-color: #ffc41e;
+    background-color: white;
+    border-width: 5px;
+}
+
 /* Конец четвертой формы "Волонтерство" */
 
 /* END MODAL FORMS style */
@@ -1572,7 +1665,6 @@ a {
     box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
     align-items: center;
     padding-top: 38px;
-   
 }
 .popup-close {
     position: absolute;
@@ -3166,7 +3258,7 @@ a {
         top: 0;
         left: 0;
         padding: 12px;
-            padding-top: 12px;
+        padding-top: 12px;
         width: 100%;
         height: auto;
         margin-left: -30vw;
