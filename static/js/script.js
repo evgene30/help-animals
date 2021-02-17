@@ -36,8 +36,6 @@ $(document).ready(function(){
   });
 
 
-
-
   $(document).ready(function($) {
 	$('.popup-open').click(function() {
 		$('.popup-fade').fadeIn();
@@ -69,7 +67,7 @@ $(document).ready(function(){
  var btn = document.getElementById("myVolun-btn");
 
  // Get the <span> element that closes the modal
- var span = document.getElementsByClassName("close")[0];
+ var span = document.getElementsByClassName("one")[0];
  // When the user clicks the button, open the modal 
  btn.onclick = function () {
      modal.style.display = "flex";
@@ -85,26 +83,70 @@ $(document).ready(function(){
      }
  }
 
-  // Get the modal "Волонтерство"
-  var modal = document.getElementById("myAuto");
+ 
+  // Get the modal "Автопомощь"
+  var modal2 = document.getElementById("myAuto");
   // Get the button that opens the modal
-  var btn = document.getElementById("myAuto-btn");
+  var btn2 = document.getElementById("myAuto-btn");
  
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  var span2 = document.getElementsByClassName("two")[0];
   // When the user clicks the button, open the modal 
-  btn.onclick = function () {
-      modal.style.display = "flex";
+  btn2.onclick = function () {
+      modal2.style.display = "flex";
   }
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function () {
-      modal.style.display = "none";
+  span2.onclick = function () {
+      modal2.style.display = "none";
   }
-  // When the user clicks anywhere outside of the modal, close it
+  //WhenTheUserClicksAnywhereOutsideOfTheModal,CloseIt
   window.onclick = function (event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
+      if (event.target == modal2) {
+          modal2.style.display = "none";
       }
   }
 
  
+    // Get the modal "Забрать домой"
+    var modal3 = document.getElementById("myHome");
+    // Get the button that opens the modal
+    var btn3 = document.getElementById("myHome-btn");
+   
+    // Get the <span> element that closes the modal
+    var span3 = document.getElementsByClassName("free")[0];
+    // When the user clicks the button, open the modal 
+    btn3.onclick = function () {
+        modal3.style.display = "flex";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span3.onclick = function () {
+        modal3.style.display = "none";
+    }
+    //WhenTheUserClicksAnywhereOutsideOfTheModal,CloseIt
+    window.onclick = function (event) {
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+
+    // Get the modal "Забрать на передержку"
+    var modal4 = document.getElementById("myKeep");
+    // Get the button that opens the modal
+    var btn4 = document.getElementById("myKeep-btn");
+   
+    // Get the <span> element that closes the modal
+    var span4 = document.getElementsByClassName("four")[0];
+    // When the user clicks the button, open the modal 
+    btn4.onclick = function () {
+        modal4.style.display = "flex";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span4.onclick = function () {
+        modal4.style.display = "none";
+    }
+    //WhenTheUserClicksAnywhereOutsideOfTheModal,CloseIt
+    window.onclick = function (event) {
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+    }

@@ -237,9 +237,10 @@
                         <div class="our-animals-block-card__article">К поводку приучен. Не агрессивный. В еде не
                             привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки.
                             Отдается только в добрые руки и под паспорт.</div>
-                        <button type="button" value="Забрать домой" class="animals-block__button yellow-button">Забрать
+                        <button type="button" value="Забрать домой" id="myHome-btn"
+                            class="animals-block__button yellow-button">Забрать
                             домой</button>
-                        <button type="button" value="Забрать на передержку"
+                        <button type="button" id="myKeep-btn" value="Забрать на передержку"
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
@@ -415,7 +416,7 @@
 
                                 <a href="#" class="popup-close"><img src="/static/img/svg/close_modal.svg"
                                         alt="close"></a>
-                            
+
                                 <script type="text/javascript" charset="utf-8" async
                                     src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada0ae07f99a92bf7dc981972aca99d2c5cd3d1fc748fb6dfb40a35d43a04ec66&amp;width=1143&amp;height=616&amp;lang=ru_RU&amp;scroll=true"></script>
                                 <script type="text/javascript">
@@ -742,66 +743,68 @@
         <!-- Modal content -->
         <div class="modal-content">
             <!-- Третья форма "Автопомощь" -->
-    <div class="take_home auto">
-        <div class="take_home__header">
-            <h2>Автопомощь</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
-            </button>
-        </div>
-        <hr size="1" color="#ffc41e">
-        <div class="auto-block">
-            <h3>Заявка</h3>
-        </div>
-        <div class="info">
-            <p class="info_p auto_p">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в
-                транспортировке, мы позвоним вам.</p>
-        </div>
-        <form action="#" method="POST" name="user_form" target="_self" autocomplete="off" id="user_data3">
-            <fieldset>
-                <legend>Фамилия и имя</legend>
-                <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2" maxlength="56"
-                    pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
-                <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
-                    pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
-                <label for="tel">Обязательное поле для заполнения</label>
-
-                <div class="checkbox-area">
-                    <h4>Выберите вид автопомощи</h4>
-
-                    <label class="take_home__check" style="margin-bottom: 9px;"><input class="checkbox" type="checkbox"
-                            name="option_1" value="Доставка
-                        еды, медикаментов и других небольших вещей"><span>Доставка еды, медикаментов и других небольших
-                            вещей</span>
-                    </label>
-                    <label class="take_home__check" style="margin-bottom: 5px;"><input class="checkbox" type="checkbox"
-                            name="option_2"
-                            value="Доставка
-                        сена или соломы, строительных материлов для будок и других крупногабаритных вещей"><span>Доставка
-                            сена или соломы, строительных материлов для будок и других крупногабаритных
-                            вещей</span>
-                    </label>
-                    <label class="take_home__check" style="margin-bottom: 11px;"><input class="checkbox" type="checkbox"
-                            name="option_3" value="Транспортировка небольших собак и котов"><span>Транспортировка
-                            небольших собак и
-                            котов</span>
-                    </label>
-                    <label class="take_home__check"><input class="checkbox" type="checkbox" name="option_4"
-                            value="Транспортировка больших собак" id="check_4"><span>Транспортировка
-                            больших
-                            собак</span>
-                    </label>
+            <div class="take_home auto">
+                <div class="take_home__header">
+                    <h2>Автопомощь</h2>
+                    <button type="button" class="close  two" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
+                    </button>
                 </div>
+                <hr size="1" color="#ffc41e">
+                <div class="auto-block">
+                    <h3>Заявка</h3>
+                </div>
+                <div class="info">
+                    <p class="info_p auto_p">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима
+                        помощь в
+                        транспортировке, мы позвоним вам.</p>
+                </div>
+                <form action="#" method="POST" name="user_form" target="_self" autocomplete="off" id="user_data3">
+                    <fieldset>
+                        <legend>Фамилия и имя</legend>
+                        <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2" maxlength="56"
+                            pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
+                        <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
+                            pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
+                        <label for="tel">Обязательное поле для заполнения</label>
 
-                <textarea style="margin-top: 25px;" placeholder="Замечания" maxlength="500"></textarea>
-            </fieldset>
-            <div class="button-type">
-                <button style="margin-top: 31px;" class="send" type="submit" form="user_data3">Отправить заявку</button>
-                <button style="margin-top: 31px;" class="reset" type="reset" form="user_data3">Отмена</button>
+                        <div class="checkbox-area">
+                            <h4>Выберите вид автопомощи</h4>
+
+                            <label class="take_home__check" style="margin-bottom: 9px;"><input class="checkbox"
+                                    type="checkbox" name="option_1" value="Доставка
+                    еды, медикаментов и других небольших вещей"><span>Доставка еды, медикаментов и других небольших
+                                    вещей</span>
+                            </label>
+                            <label class="take_home__check" style="margin-bottom: 5px;"><input class="checkbox"
+                                    type="checkbox" name="option_2" value="Доставка
+                    сена или соломы, строительных материлов для будок и других крупногабаритных вещей"><span>Доставка
+                                    сена или соломы, строительных материлов для будок и других крупногабаритных
+                                    вещей</span>
+                            </label>
+                            <label class="take_home__check" style="margin-bottom: 11px;"><input class="checkbox"
+                                    type="checkbox" name="option_3"
+                                    value="Транспортировка небольших собак и котов"><span>Транспортировка
+                                    небольших собак и
+                                    котов</span>
+                            </label>
+                            <label class="take_home__check"><input class="checkbox" type="checkbox" name="option_4"
+                                    value="Транспортировка больших собак" id="check_4"><span>Транспортировка
+                                    больших
+                                    собак</span>
+                            </label>
+                        </div>
+
+                        <textarea style="margin-top: 25px;" placeholder="Замечания" maxlength="500"></textarea>
+                    </fieldset>
+                    <div class="button-type">
+                        <button style="margin-top: 31px;" class="send" type="submit" form="user_data3">Отправить
+                            заявку</button>
+                        <button style="margin-top: 31px;" class="reset" type="reset" form="user_data3">Отмена</button>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-    <!-- Конец третьей формы "Автопомощь" -->
+            <!-- Конец третьей формы "Автопомощь" -->
         </div>
     </div>
 
@@ -810,60 +813,181 @@
     <div id="myVolun" class="modal">
         <!-- Modal content -->
         <div class="modal-content" style="max-width: 582px;">
-           <!-- Четвертая форма "Волонтерство" -->
-    <div class="take_home volonter">
-        <div class="take_home__header">
-            <h2>Волонтерство</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
-            </button>
-        </div>
-        <hr size="1" color="#ffc41e">
-        <div class="auto-block">
-            <h3>Заявка</h3>
-        </div>
-        <div class="info">
-            <p class="info_p auto_p">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь,
-                мы позвоним вам.</p>
-        </div>
-        <form action="#" method="POST" name="user_form" target="_self" autocomplete="off" id="user_data4">
-            <fieldset>
-                <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2" maxlength="56"
-                    pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
-                <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
-                    pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
-                <label for="tel">Обязательное поле для заполнения</label>
-                <div class="radio-volonter">
+            <!-- Четвертая форма "Волонтерство" -->
+            <div class="take_home volonter">
+                <div class="take_home__header">
+                    <h2>Волонтерство</h2>
+                    <button type="button" class="close one" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
+                    </button>
+                </div>
+                <hr size="1" color="#ffc41e">
+                <div class="auto-block">
+                    <h3>Заявка</h3>
+                </div>
+                <div class="info">
+                    <p class="info_p auto_p">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима
+                        помощь,
+                        мы позвоним вам.</p>
+                </div>
+                <form action="#" method="POST" name="user_form" target="_self" autocomplete="off" id="user_data4">
+                    <fieldset>
+                        <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2" maxlength="56"
+                            pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
+                        <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
+                            pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
+                        <label for="tel">Обязательное поле для заполнения</label>
+                        <div class="radio-volonter">
 
-                    <div class="radio-volonter__radio">
-                        <input type="radio" id="radio_1" name="help" class="radio_button" value="Хочу помогать на постоянной основе (расписание можно подобрать так, какбудет удобно для всех)">
+                            <div class="radio-volonter__radio">
+                                <input type="radio" id="radio_1" name="help" class="radio_button"
+                                    value="Хочу помогать на постоянной основе (расписание можно подобрать так, какбудет удобно для всех)">
 
-                        <label for="radio_1">Хочу помогать на постоянной основе (расписание можно подобрать так, как
-                            будет удобно для всех)
-                        </label>
+                                <label for="radio_1">Хочу помогать на постоянной основе (расписание можно подобрать так,
+                                    как
+                                    будет удобно для всех)
+                                </label>
 
+                            </div>
+
+                            <div class="radio-volonter__radio">
+
+                                <input type="radio" id="radio_2" name="help" class="radio_button"
+                                    value="Готов помогать иногда. Хочу выбрать удобное для меня время">
+
+                                <label for="radio_2">Готов помогать иногда. Хочу выбрать удобное для меня время</label>
+
+                            </div>
+                        </div>
+                        <textarea placeholder="Замечания" maxlength="500"></textarea>
+                    </fieldset>
+                    <div class="button-type">
+                        <button style="margin-top: 31px;" class="send" type="submit" form="user_data4">Отправить
+                            заявку</button>
+                        <button style="margin-top: 31px;" class="reset" type="reset" form="user_data4">Отмена</button>
                     </div>
+                </form>
+            </div>
+            <!-- Конец четвертой формы "Волонтерство" -->
+        </div>
+    </div>
 
-                    <div class="radio-volonter__radio">
-
-                        <input type="radio" id="radio_2" name="help" class="radio_button"
-                            value="Готов помогать иногда. Хочу выбрать удобное для меня время">
-
-                        <label for="radio_2">Готов помогать иногда. Хочу выбрать удобное для меня время</label>
-
+    <div id="myHome" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- Первая форма "Забрать домой" -->
+            <div class="take_home">
+                <div class="take_home__header">
+                    <h2>Забрать домой</h2>
+                    <button type="button" class="close free" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
+                    </button>
+                </div>
+                <hr size="1" color="#ffc41e">
+                <div class="content-block">
+                    <div class="image-block">
+                        <img id="foto_montic" src="static/img/png/form.png" alt="foto">
+                    </div>
+                    <div class="name-block">
+                        <h3>Моник</h3>
+                        <p>Мальчик, 7 месяцев</p>
                     </div>
                 </div>
-                <textarea placeholder="Замечания" maxlength="500"></textarea>
-            </fieldset>
-            <div class="button-type">
-                <button style="margin-top: 31px;" class="send" type="submit" form="user_data4">Отправить заявку</button>
-                <button style="margin-top: 31px;" class="reset" type="reset" form="user_data4">Отмена</button>
+                <div class="info">
+                    <p class="info_p">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете
+                        забрать себе
+                        питомца.</p>
+                </div>
+                <form action="#" method="POST" name="user_form" target="_self" autocomplete="off" id="user_data">
+                    <fieldset>
+                        <!-- Форма ФИО -->
+                        <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2" maxlength="56"
+                            pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
+                        <!-- Форма телефон -->
+                        <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
+                            pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
+                        <label for="tel">Обязательное поле для заполнения</label>
+                        <!-- Форма замечания -->
+                        <textarea placeholder="Замечания" maxlength="500"></textarea>
+                    </fieldset>
+                    <div class="info down_text">
+                        <p class="p_h">Если у вас есть вопросы, можете позвонить нам:</p>
+                        <p class="p_h">+375 (33) 6237879 Лена</p>
+                        <p class="p_h">+375 (29) 7877791 Ольга</p>
+                        <p class="p_h">+375 (29) 5837015 Рита</p>
+                    </div>
+                    <div class="button-type">
+                        <button type="submit" form="user_data" class="send">Отправить</button>
+                        <button class="reset" type="reset" form="user_data">Отмена</button>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-    <!-- Конец четвертой формы "Волонтерство" -->
+            <!-- Конец первой формы "Забрать домой" -->
         </div>
     </div>
+
+
+    <div id="myKeep" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- Вторая форма "Забрать на передержку" -->
+            <div class="take_home right">
+                <div class="take_home__header">
+                    <h2>Забрать на передержку</h2>
+                    <button type="button" class="close four" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="/static/img/svg/close_modal.svg" alt="close"></span>
+                    </button>
+                </div>
+                <hr size="1" color="#ffc41e">
+                <div class="content-block">
+                    <div class="image-block">
+                        <img id="foto_montic" src="static/img/png/form.png" alt="foto">
+                    </div>
+                    <div class="name-block">
+                        <h3>Моник</h3>
+                        <p>Мальчик, 7 месяцев</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="info_p">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете
+                        забрать себе
+                        питомца на передержку.</p>
+                </div>
+                <form action="#" method="POST" name="user_form2" target="_self" autocomplete="off" id="user_data2">
+                    <fieldset>
+                        <!-- Форма ФИО -->
+                        <input class="text_block" type="text" placeholder="Фамилия и имя" minlength="2" maxlength="56"
+                            pattern="[^A-Za-zА-Яа-яЁё\s]+${54}" required>
+                        <!-- Форма телефон -->
+                        <input class="tel_block" type="tel" placeholder="Номер телефона в формате +375XXXXXXXXX"
+                            pattern="[\+][0-9]{12}" minlength="13" maxlength="13" required>
+                        <label for="tel">Обязательное поле для заполнения</label>
+                        <!-- Форма замечания -->
+                        <textarea placeholder="Замечания" maxlength="500"></textarea>
+                    </fieldset>
+                    <div class="info down_text">
+                        <p class="p_h">Если у вас есть вопросы, можете позвонить нам:</p>
+                        <p class="p_h">+375 (33) 6237879 Лена</p>
+                        <p class="p_h">+375 (29) 7877791 Ольга</p>
+                        <p class="p_h">+375 (29) 5837015 Рита</p>
+                    </div>
+                    <div class="info two">
+                        <p class="info_p two_1">Наши волонтеры будут активно искать будущий дом
+                            хвостику, пока вы помогаете нам с
+                            передержкой.
+                        <p class="info_p two_2">Спасибо за помощь!</p>
+                        </p>
+                    </div>
+                    <div class="button-type">
+                        <button type="submit" form="user_data2" class="send">Отправить</button>
+                        <button class="reset" type="reset" form="user_data2">Отмена</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Конец второй формы "Забрать на передержку" -->
+        </div>
+    </div>
+
 
     <!-- Кнопка ВВерх -->
     <div id="topButtom" title="Вверх"><svg width="60" height="60" viewBox="0 0 418 418" fill="none"

@@ -829,11 +829,12 @@ label input[type="checkbox"]:checked + span {
 
 }
 .take_home__check {
-    margin-bottom: 0;
+    margin-bottom: 5px !important;
 }
 .take_home__check span{
     display: flex;
     flex-direction: row;
+    
 }
 .checkbox-area > label > span {
     margin-left: 0;
@@ -1132,6 +1133,14 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
 
 .page-header__wrapper {
     display: flex;
@@ -1655,7 +1664,7 @@ a {
     top: 10%;
     left: 50%;
     padding: 12px;
-    width: 62%;
+    width: 60%;
     height: auto;
     margin-left: -31vw;
     background: #fff;
@@ -3272,4 +3281,20 @@ a {
         margin: 0 auto;
         justify-content: center;
     }
+    /* формы 360 */
+    .take_home {
+        padding: 30px;
+        max-width: 525px;
+    }
+    .take_home__header > h2 {
+        font-size: 22px;
+    }
+    .button-type {
+        justify-content: center;
+    }
+
+
+
+
+
 }
