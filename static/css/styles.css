@@ -3163,7 +3163,7 @@ a {
     .popup {
         display: flex;
         position: fixed;
-        top: 5%;
+        top: 0;
         left: 0;
         padding: 12px;
             padding-top: 12px;
