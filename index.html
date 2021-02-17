@@ -407,7 +407,29 @@
                         <li>Гипермаркет «Евроопт», ул. Янки Купалы, 82А;</li>
                         <li>Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.</li>
                     </ol>
+                    <div class="our-animals-block__links feed-block-info__links">
+                        <a href="#" class="our-animals-block__link-all feed-block-info__link popup-open"
+                            id="ouranimals-all__send">Посмотреть на карте</a>
+                        <div class="popup-fade">
+                            <div class="popup">
 
+                                <a href="#" class="popup-close"><img src="/static/img/svg/close_modal.svg"
+                                        alt="close"></a>
+
+                                <script type="text/javascript" charset="utf-8" async
+                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada0ae07f99a92bf7dc981972aca99d2c5cd3d1fc748fb6dfb40a35d43a04ec66&amp;width=1143&amp;height=616&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <script type="text/javascript">
+                                    ymaps.ready(init);
+                                    function init() {
+                                        var myMap = new ymaps.Map("map", {
+                                            center: [55.76, 37.64],
+                                            zoom: 7
+                                        });
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -482,6 +504,9 @@
                             id="ouranimals-all__send">Кому и
                             куда передать?</a>
                     </div>
+
+
+
                 </div>
 
             </section>
@@ -709,7 +734,6 @@
 
         </section>
 
-
     </footer>
     <!-- END секция footer -->
 
@@ -852,6 +876,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
     <script src="/static/js/script.js"></script>
     <!-- END Кнопка ВВерх -->
 </body>

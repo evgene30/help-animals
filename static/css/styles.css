@@ -602,7 +602,7 @@ button {
     font-size: 20px;
     max-width: 234px;
     height: 42px;
-    border: white;
+    border: rgb(70, 37, 37);
     outline: none;
     text-decoration: none;
     padding: 5px 33px 5px 32px;
@@ -1391,7 +1391,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 43px 0px 40px 0px;
+    padding: 43px 0px 24px 0px;
     margin: 0 auto;
 }
 .our-animals__info h2 {
@@ -1539,6 +1539,48 @@ a {
     background: #ffbb0c;
     box-shadow: none;
 }
+
+/* ===================== */
+.popup-fade {
+    display: none;
+}
+.popup-fade:before {
+    content: "";
+    background: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 9999;
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    padding: 12px;
+    width: 62%;
+    height: auto;
+    margin-left: -31vw;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 99999;
+    opacity: 1;
+    box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
+    align-items: center;
+    padding-top: 38px;
+   
+}
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+}
+
+/* ++++++++++++++++++++++++++ */
 .white-button {
     max-width: 296px;
     border: 2px solid #ffc41e;
@@ -1741,6 +1783,9 @@ a {
     line-height: 178%;
     list-style: decimal;
     list-style-position: inside;
+}
+.fin-item li:last-child {
+    margin-bottom: 25px;
 }
 /* END секция "Финансовая поддержка" */
 
@@ -2272,7 +2317,28 @@ a {
     .our-animals__info {
         max-width: 768px;
     }
+    .page-name__background {
+        padding-top: 12%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .our-animals__info h2 {
+        padding: 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .animals__info h2 {
+        padding: 0;
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 24px;
+    }
+    .linlk-down {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 639px) {
     html {
         font-size: 8px;
@@ -2572,6 +2638,13 @@ a {
     }
     .link-social img {
         width: 32px;
+    }
+
+    .animals__info h2 {
+        padding: 0;
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 24px;
     }
 
     /* START секция "Финансовая поддержка"  */
@@ -3060,5 +3133,51 @@ a {
     }
     .page-footer__copyright {
         margin-top: 10px;
+    }
+    .our-animals__info {
+        max-width: 300px;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .our-animals__info h2 {
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .page-name__background {
+        padding-top: 15px;
+    }
+    .our-animals__info h2::before {
+        content: url(/static/img/svg/mark.svg);
+        width: 24px;
+        height: 24px;
+        margin-right: 55px;
+    }
+    .linlk-down {
+        display: none;
+    }
+    .fin-item li:last-child {
+        margin-bottom: 0px;
+    }
+    .popup {
+        display: flex;
+        position: fixed;
+        top: 5%;
+        left: 0;
+        padding: 12px;
+            padding-top: 12px;
+        width: 100%;
+        height: auto;
+        margin-left: -30vw;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 99999;
+        opacity: 1;
+        box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
+        align-items: center;
+        padding-top: 38px;
+        margin: 0 auto;
+        justify-content: center;
     }
 }
