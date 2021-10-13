@@ -544,19 +544,6 @@ fieldset > input {
     color: #6b6b6b;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .right > form > textarea {
     margin-bottom: -6px;
 }
@@ -807,7 +794,7 @@ label input[type="checkbox"]:checked + span {
     user-select: none;
 }
 .checkbox + span::before {
-    content: '';
+    content: "";
     display: inline-flex;
     flex-shrink: 0;
     flex-grow: 0;
@@ -826,15 +813,13 @@ label input[type="checkbox"]:checked + span {
     border-color: #ffc41e;
     background-color: #ffc41e;
     background-image: url("/static/img/svg/check.svg");
-
 }
 .take_home__check {
     margin-bottom: 5px !important;
 }
-.take_home__check span{
+.take_home__check span {
     display: flex;
     flex-direction: row;
-    
 }
 .checkbox-area > label > span {
     margin-left: 0;
@@ -924,7 +909,7 @@ label input[type="checkbox"]:checked + span {
     user-select: none;
 }
 .radio_button + label::before {
-    content: '';
+    content: "";
     display: block;
     flex-shrink: 0;
     flex-grow: 0;
@@ -1133,14 +1118,6 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 .page-header__wrapper {
     display: flex;
@@ -2321,6 +2298,7 @@ a {
     bottom: 45px;
     right: 45px;
     z-index: 1000;
+    cursor: pointer;
 }
 #topButtom rect {
     fill: #ffc41e;
@@ -3292,9 +3270,4 @@ a {
     .button-type {
         justify-content: center;
     }
-
-
-
-
-
 }

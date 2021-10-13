@@ -89,7 +89,7 @@
     <!-- END секция header -->
 
     <!-- START секция main -->
-    <main class="page-name">
+    <main class="page-name" id="mainpage">
 
         <!-- START секция "Большие добрые сердца..." -->
 
@@ -226,7 +226,7 @@
 
                 <div class="our-animals-block__cards">
 
-                    <div class="our-animals-block__card" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="our-animals-block__card" data-aos="fade-left" id="1" data-aos-duration="1000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/boy_dog.jpg" alt="пес Моник" />
                         </div>
@@ -237,14 +237,13 @@
                         <div class="our-animals-block-card__article">К поводку приучен. Не агрессивный. В еде не
                             привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки.
                             Отдается только в добрые руки и под паспорт.</div>
-                        <button type="button" value="Забрать домой" id="myHome-btn"
-                            class="animals-block__button yellow-button">Забрать
+                        <button type="button" value="Забрать домой" class="animals-block__button yellow-button">Забрать
                             домой</button>
-                        <button type="button" id="myKeep-btn" value="Забрать на передержку"
+                        <button type="button" value="Забрать на передержку"
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="our-animals-block__card" data-aos="fade-left" id="2" data-aos-duration="2000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Lunatik_cat.jpg"
                                 alt="кот Лунатик" />
@@ -261,7 +260,7 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="our-animals-block__card" data-aos="fade-left" id="3" data-aos-duration="3000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/gerda_dog.jpg" alt="пес Герда" />
                         </div>
@@ -278,7 +277,8 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card card--none " data-aos="fade-left" data-aos-duration="1000">
+                    <div class="our-animals-block__card card--none " data-aos="fade-left" id="4"
+                        data-aos-duration="1000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Saki_cat.jpg" alt="кот Саки" />
                         </div>
@@ -291,11 +291,12 @@
                             длиннющие белые усы.</div>
                         <button type="button" value="Забрать домой" class="animals-block__button yellow-button">Забрать
                             домой</button>
-                        <button type="button" value="Забрать на пеdiv"
+                        <button type="button" value="Забрать на передержку"
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card card--none" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="our-animals-block__card card--none" data-aos="fade-left" id="5"
+                        data-aos-duration="2000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Monika_dog.jpg"
                                 alt="пес Моника" />
@@ -313,7 +314,8 @@
                             class="animals-block__button white-button">Забрать на передержку</button>
                     </div>
 
-                    <div class="our-animals-block__card card--none" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="our-animals-block__card card--none" data-aos="fade-left" id="6"
+                        data-aos-duration="3000">
                         <div class="card-block__image">
                             <img class="our-animals-block__foto" src="/static/img/jpg/Adreatino_dog.jpg"
                                 alt="пес Андреантино" />
@@ -416,18 +418,16 @@
 
                                 <a href="#" class="popup-close"><img src="/static/img/svg/close_modal.svg"
                                         alt="close"></a>
-
                                 <script type="text/javascript" charset="utf-8" async
-                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada0ae07f99a92bf7dc981972aca99d2c5cd3d1fc748fb6dfb40a35d43a04ec66&amp;width=1143&amp;height=616&amp;lang=ru_RU&amp;scroll=true"></script>
-                                <script type="text/javascript">
-                                    ymaps.ready(init);
-                                    function init() {
-                                        var myMap = new ymaps.Map("map", {
-                                            center: [55.76, 37.64],
-                                            zoom: 7
-                                        });
-                                    }
-                                </script>
+                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada0ae07f99a92bf7dc981972aca99d2c5cd3d1fc748fb6dfb40a35d43a04ec66&amp;width=1143&amp;height=616&amp;lang=ru_RU&amp;scroll=true">
+                                        ymaps.ready(init);
+                                        function init() {
+                                            var myMap = new ymaps.Map("map", {
+                                                center: [55.76, 37.64],
+                                                zoom: 4,
+                                            });
+                                        }
+                                    </script>
                             </div>
                         </div>
                     </div>
@@ -999,7 +999,6 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
     <script src="/static/js/script.js"></script>
     <!-- END Кнопка ВВерх -->
 </body>
