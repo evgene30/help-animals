@@ -2332,7 +2332,7 @@ a {
     section {
         padding: 0 10%;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
     .page-header {
         height: 542px;
@@ -2428,14 +2428,14 @@ a {
         font-weight: 300;
     }
     section {
-        padding: 0 30px;
+        padding-left: 0;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
 
     /* START секция header */
     .page-header__section {
-        padding-top: 0px;
+        padding-top: 0;
         height: 566px;
     }
     .page-header {
@@ -2565,7 +2565,7 @@ a {
 
     .page-header__section {
         background-image: url(../img/png/dog360.png);
-        max-width: 500px;
+        max-width: 100%;
     }
 
     .cat-header__image {
@@ -2947,6 +2947,7 @@ a {
         content: "";
         margin-top: -8px;
         transition: all 0.3s;
+       
     }
     .menu-link span:after {
         content: "";
@@ -2970,14 +2971,13 @@ a {
     .menu {
         display: flex;
         justify-content: center;
-        -ms-align-items: center;
         align-items: center;
         background-color: white;
         position: fixed;
         width: 100vw;
         height: 54vh;
-        z-index: 10;
-        left: -100vw;
+        z-index: 10 !important;
+        left: -200vw;
         transition: all 0.5s;
         flex-direction: column;
     }
